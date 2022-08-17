@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# nbgrader files
+nbgrader_config.py
+
 # C extensions
 *.so
 
