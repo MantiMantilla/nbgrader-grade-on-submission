@@ -11,7 +11,7 @@ mkdir ~/autograde_job/
 wget "https://raw.githubusercontent.com/MantiMantilla/nbgrader-grade-on-submission/main/source/watch%2C%20collect%2C%20grade%2C%20release.sh" -O ~/autograde_job/grade_on_submit.sh
 ```
 
-This downloads a shell script to to your `home` directory that, when running, watches for changes to the nbgrader default exchange directory and performs some tasks when it detects a new subdirectory being created.
+This downloads a shell script to to your `~/autograde_job` directory that, when running, watches for changes to the nbgrader default exchange directory and performs some tasks when it detects a new subdirectory being created.
 
 1. Collects all submissions of the respective assignment.
 2. Grades only the new submission, forcing an override on previous grades of the same assignment.
