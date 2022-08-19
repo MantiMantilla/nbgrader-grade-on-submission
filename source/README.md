@@ -29,3 +29,5 @@ nohup ~/autograde_job/grade_on_submit.sh &
 This executes the script as a background process and writes all logs to a `nohup.out` file. The process will persist after the session ends.
 
 If needed, you can use `ps` and `pkill` to interrupt the process.
+
+The process will not persist on reboot. Also, we chose not to run this as a systemd service because we need accedd to the JupyterHub session and its extensions.
