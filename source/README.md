@@ -1,4 +1,4 @@
-# Deploy bash script as systemd service.
+# Deploy bash script as persistent background process.
 
 The following steps will allow you to deploy this script as a continuously executing systemd service.
 
