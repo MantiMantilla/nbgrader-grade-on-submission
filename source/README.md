@@ -33,4 +33,4 @@ If needed, you can use `ps` and `pkill` to interrupt the process.
 
 The process will not persist on reboot. Also, we chose not to run this as a systemd service because we need accedd to the JupyterHub session and its extensions.
 
-You may press any key to return to the terminal.
+You may press the `enter` key to return to the terminal.
