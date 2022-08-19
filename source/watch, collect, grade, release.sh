@@ -16,7 +16,8 @@ inotifywait -m /srv/nbgrader/exchange/HCAD/inbound/ -e create |
         nbgrader generate_feedback --assignment $_tmp_dir --student $_usr_id  --force
         
         echo "Releasing feedback..."
-        nbgrader release_feedback --assignment $_tmp_dir
+        nbgrader release_feedback --assignment $_tmp_dir --student $_usr_id
         
+        echo "DONE!!!!"
         echo $_tmp_dir
     done
