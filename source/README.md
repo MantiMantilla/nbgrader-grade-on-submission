@@ -23,7 +23,7 @@ This downloads a shell script to to your `~/autograde_job` directory that, when 
 Run the following commands:
 
 ```bash
-chmod +x filename.sh
+chmod +x ~/autograde_job/grade_on_submit.sh
 nohup ~/autograde_job/grade_on_submit.sh &
 ```
 
