@@ -7,7 +7,7 @@ inotifywait -m /srv/nbgrader/exchange/HCAD/inbound/ -e create |
         _tmp_dir=${file#*+}
         _tmp_dir=${_tmp_dir%%+*}
 	echo "Collecting assignments..."
-        nbgrader collect --assignment $_tmp_dir
+        nbgrader collect --assignment $_tmp_dir --update
         
         echo "Grading assignments..."
         nbgrader autograde --assignment $_tmp_dir --student $_usr_id --force
@@ -15,7 +15,7 @@ inotifywait -m /srv/nbgrader/exchange/HCAD/inbound/ -e create |
         echo "Generating feedback..."
         nbgrader generate_feedback --assignment $_tmp_dir --student $_usr_id  --force
         
-        echo "Releasing feedback..."
+        echo "Releasing feedback..."	
         nbgrader release_feedback --assignment $_tmp_dir --student $_usr_id
         
         echo "DONE!!!!"
