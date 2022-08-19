@@ -20,9 +20,10 @@ This downloads a shell script to to your `~/autograde_job` directory that, when 
 
 ## 2. Execute and persist the process.
 
-Run the following command:
+Run the following commands:
 
 ```bash
+chmod +x filename.sh
 nohup ~/autograde_job/grade_on_submit.sh &
 ```
 
